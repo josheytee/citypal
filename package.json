@@ -14,10 +14,13 @@
     "@heroicons/vue": "^1.0.1",
     "@nuxt-hero-icons/outline": "^1.0.1",
     "@nuxtjs/composition-api": "^0.23.3",
+    "@splidejs/splide": "^2.4.21",
+    "@splidejs/vue-splide": "^0.3.5",
     "@tailwindcss/forms": "^0.3.2",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "nuxt-property-decorator": "^2.9.1",
+    "swiper": "^6.6.1",
     "vue-awesome-swiper": "^4.1.1",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2"

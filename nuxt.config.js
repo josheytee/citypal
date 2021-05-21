@@ -21,8 +21,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: ['~/plugins/vuesplide.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,7 +34,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
     '@nuxt-hero-icons/outline/nuxt',
-    '@nuxt-hero-icons/solid/nuxt',
+    // '@nuxt-hero-icons/solid/nuxt',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

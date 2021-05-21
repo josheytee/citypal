@@ -9,9 +9,9 @@
         <p class="text-sm">Secure your home with citypal, African first rental company</p>
       </section>
 
-      <div class="container mx-auto bg-white bg-opacity-25 w-1/2 rounded-md">
+      <div class="container bg-white bg-opacity-25 flex justify-center rounded-md">
         <section class="flex flex-row gap-10 justify-evenly p-3">
-          <div class="flex flex-row items-center bg-white rounded-md">
+          <div class="flex flex-row items-center bg-white rounded-md p-2">
             <div class="w-30 h-30">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@
               </svg>
             </div>
             <div class="flex flex-col">
-              <small class="p-1"> What kind of property do you want?</small>
+              <small> What kind of property do you want?</small>
               <input
                 type="text"
                 class="p-1 rounded"
@@ -286,22 +286,23 @@
         </div>
         <a href="" class="btn-primary self-center">Getting Started</a>
       </section>
+
       <Testimonials/>
   </main>
 </template>
 
-<script lang="ts">
+<script lang="ts"> 
 import { Component, Vue } from "nuxt-property-decorator";
 import Nav from "@/components/Nav.vue";
-import Carousel from "@/components/Carousel.vue";
+import Testimonials from "@/components/Testimonials.vue";
 
 @Component({
   components: {
     Nav,
-    Carousel,
+    Testimonials,
   },
 })
 export default class Index extends Vue {}
 </script>
-<style lang="scss" scoped>
+<style scoped>
 </style>
