@@ -77,14 +77,23 @@
         />
       </a>
     </div>
+    <Login showModal="true" />
+
   </header>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Login from "@/components/Login.vue";
 
-@Component
-export default class Nav extends Vue {}
+@Component({
+  components: {
+    Login
+  }
+})
+export default class Nav extends Vue {
+  public showModal = false;
+}
 </script>
 
 <style>

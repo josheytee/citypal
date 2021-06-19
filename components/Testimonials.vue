@@ -1,8 +1,11 @@
 <template>
-  <splide>
+  <splide class="container">
     <!-- <splide-slide>
       <img src="image01.jpg">
     </splide-slide> -->
+    <splide-slide>
+      <img src="~/assets/img/12.jpeg" style="width:500px">
+    </splide-slide>
     <splide-slide>
       <img src="~/assets/img/12.jpeg" style="width:500px">
     </splide-slide>
@@ -19,7 +22,7 @@
 <script>
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
-// import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
 
   export default {
     name: 'Testimonials',

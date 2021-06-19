@@ -9,10 +9,10 @@
         <p class="text-sm">Secure your home with citypal, African first rental company</p>
       </section>
 
-      <div class="container bg-white bg-opacity-25 flex justify-center rounded-md">
-        <section class="flex flex-row gap-10 justify-evenly p-3">
+      <!-- <div class="container flex  rounded-md"> -->
+        <section class="flex flex-row flex-wrap gap-5 p-3 justify-center mx-auto w-5/6 md:w-2/3 bg-white bg-opacity-25 rounded-md m-2">
           <div class="flex flex-row items-center bg-white rounded-md p-2">
-            <div class="w-30 h-30">
+            <div class="w-30 h-30 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
@@ -28,8 +28,8 @@
                 />
               </svg>
             </div>
-            <div class="flex flex-col">
-              <small> What kind of property do you want?</small>
+            <div class="flex flex-col w-full">
+              <small class="text-xs"> What kind of property do you want?</small>
               <input
                 type="text"
                 class="p-1 rounded"
@@ -37,14 +37,14 @@
               />
             </div>
           </div>
-          <select name="" id="" class="rounded w-36 p-2">
+          <select name="" id="" class="flex justify-center rounded  md:w-36 p-2">
             <option value="">may</option>
           </select>
           <button type="submit" class="p-2 bg-primary  w-36 rounded">
             Search
           </button>
         </section>
-      </div>
+      <!-- </div> -->
 
     </div>
     <section class="p-4 bg-gray-200">
@@ -288,6 +288,7 @@
       </section>
 
       <Testimonials/>
+      <Footer />
   </main>
 </template>
 
@@ -295,11 +296,13 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import Nav from "@/components/Nav.vue";
 import Testimonials from "@/components/Testimonials.vue";
+import Footer from "@/components/Footer.vue";
 
 @Component({
   components: {
     Nav,
     Testimonials,
+    Footer,
   },
 })
 export default class Index extends Vue {}

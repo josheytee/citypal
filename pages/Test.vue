@@ -32,3 +32,39 @@ export default class Test extends Vue{
 
 </script>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="calculator">
+    <!-- Modify elements addend1, addend2, and total -->
+    <input id="addend1" type="number" v-model="addend1" /> + <input id="addend2" v-model="addend2" type="number" /> = <span id="total">{{total}}</span>
+  </div>
+  <script>
+    var vm = new Vue({
+      // Modify Vue object
+      data:{
+        addend1: 0,
+        addend2: 0,
+      },
+      computed: {
+        total: function (){
+          return this.addend1 + this.addend2;
+        }
+      }
+    });
+
+    // Example case
+    vm.addend1 = 10;
+    vm.addend2 = 10;
+    
+    setTimeout(() => console.log(document.getElementById("addend1").value + " + " + 
+                                 document.getElementById("addend2").value + " = " +
+                                 document.getElementById("total").innerText));
+  </script>
+</body>
+</html>
+

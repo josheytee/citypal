@@ -16,14 +16,15 @@
     "@nuxtjs/composition-api": "^0.23.3",
     "@splidejs/splide": "^2.4.21",
     "@splidejs/vue-splide": "^0.3.5",
-    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/forms": "^0.3.3",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "nuxt-property-decorator": "^2.9.1",
     "swiper": "^6.6.1",
     "vue-awesome-swiper": "^4.1.1",
     "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2"
+    "vue-property-decorator": "^9.1.2",
+    "vue-tailwind": "^2.3.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",
