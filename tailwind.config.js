@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'landing': "url('@/assets/img/soft.png')",
+        'landing': "url('@/assets/img/home.png')",
       }),
       colors: {
         primary: {

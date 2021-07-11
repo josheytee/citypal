@@ -44,6 +44,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+  serverMiddleware: [
+    { path: "/api", handler: "~/api/index.js" },
+  ],
   server: {
     port: 8000 // default: 3000
   }
