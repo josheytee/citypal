@@ -66,7 +66,19 @@
           </li>
         </ul>
       </nav>
-      <a
+
+      <nav>
+      <ul>
+        <li>
+          <button id="login"
+            class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
+          >Login</button>
+          <Login />
+        </li>
+      </ul>
+
+      </nav>
+      <!-- <a
         href="#"
         class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor"
       >
@@ -75,9 +87,8 @@
           src="https://steemitimages.com/u/juliebush/avatar"
           alt="Andy Leverenz"
         />
-      </a>
+      </a> -->
     </div>
-    <Login showModal="true" />
 
   </header>
 </template>

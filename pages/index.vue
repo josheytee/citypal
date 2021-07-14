@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="bg-landing">
+    <div class="bg-landing bg-cover bg-center h-96">
       <Nav />
       <!-- <Carousel /> -->
       <section class="text-white container mx-auto bg-opacity-25 w-1/2 rounded-md my-5">
@@ -286,7 +286,6 @@
         </div>
         <a href="" class="btn-primary self-center">Getting Started</a>
       </section>
-
       <Testimonials/>
       <Footer />
   </main>
