@@ -75,6 +75,12 @@
           >Login</button>
           <Login />
         </li>
+        <li>
+          <button id="register"
+            class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
+          >Register</button>
+          <Register />
+        </li>
       </ul>
 
       </nav>
@@ -96,10 +102,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Login from "@/components/Login.vue";
+import Register from "@/components/Register.vue";
 
 @Component({
   components: {
-    Login
+    Login,
+    Register
   }
 })
 export default class Nav extends Vue {

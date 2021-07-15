@@ -1,10 +1,10 @@
 <template>
   <div :id="id" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3 class="title"><slot name="title"></slot></h3>
-      <hr style="border: 1px solid #FEF7F2">
-      <slot name="body"></slot>
+      <span :id="id+'-close'" class="close">&times;</span>
+      <h1 class="title"><slot name="title"></slot></h1>
+      <hr style="border: 1px solid #fef7f2; margin: 5px ;" />
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -12,7 +12,18 @@
 <script>
 export default {
   name: "Modal",
-  props: ["id", "trigger"],
+  props: {
+    id: String,
+    trigger: String,
+    title: {
+      type: String,
+      default: "",
+    },
+    icon: {
+      type: String,
+      default: "",
+    },
+  },
   mounted() {
     // Get the modal
     var modal = document.getElementById(this.id);
@@ -21,7 +32,7 @@ export default {
     var btn = document.getElementById(this.trigger);
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementById(this.id+"-close");
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
@@ -35,6 +46,7 @@ export default {
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
+      console.log(event.target,modal)
       if (event.target == modal) {
         modal.style.display = "none";
       }
@@ -44,10 +56,11 @@ export default {
 </script>
 
 <style scoped>
-.title{
+.title {
   color: orange;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 /* The Modal (background) */
 .modal {
