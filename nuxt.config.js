@@ -45,7 +45,7 @@ export default {
   build: {
   },
   serverMiddleware: [
-    { path: "/api", handler: "~/api/index.js" },
+    { path: "/api", handler: "~/api/server.js" },
   ],
   server: {
     port: 8000 // default: 3000

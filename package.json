@@ -28,7 +28,10 @@
     "dotenv": "^10.0.0",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.3.0",
     "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.14",
     "morgan": "^1.10.0",
@@ -41,7 +44,8 @@
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
     "vue-tailwind": "^2.3.0",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "xss-clean": "^0.1.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",
